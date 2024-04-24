@@ -26,3 +26,4 @@ export class NegociacoesView extends View {
     }
     ;
 }
+;

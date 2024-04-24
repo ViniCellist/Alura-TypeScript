@@ -28,4 +28,4 @@ export class NegociacoesView extends View<Negotiations>{
             </table>
         `;
     };
-}
+};
