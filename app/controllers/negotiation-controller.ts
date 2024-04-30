@@ -10,8 +10,8 @@ export class NegotiationController {
     private inputQuantidade: HTMLInputElement;
     private inputValor: HTMLInputElement;
     private negociacoes = new Negotiations();
-    private negociacoesView = new NegociacoesView('#negociacoesView', true);
-    private mensagemView = new MessageView('#mensagemView', false);
+    private negociacoesView = new NegociacoesView('#negociacoesView');
+    private mensagemView = new MessageView('#mensagemView');
 
 
     constructor() {
