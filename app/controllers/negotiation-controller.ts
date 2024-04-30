@@ -1,3 +1,4 @@
+import { logarTempoDeExecucao } from '../decorators/logar-tempo-execucao.js';
 import { DiasDaSemana } from '../enums/dias-da-semana.js';
 import { MessageView } from '../views/message-view.js';
 import { NegociacoesView } from '../views/negotiation-view.js';
@@ -21,6 +22,7 @@ export class NegotiationController {
 
     };
 
+    @logarTempoDeExecucao()
     public adiciona(): void {
         const negociacao = Negociacao.criaDe(
             this.inputData.value,
@@ -34,6 +36,7 @@ export class NegotiationController {
         this.negociacoes.adiciona(negociacao);
         this.limparFormulario();
         this.atualizarView();
+        const t2 = performance.now();
     }
 
     private ehDiaUtil(data: Date) {
