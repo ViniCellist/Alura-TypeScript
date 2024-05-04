@@ -12,7 +12,7 @@ import { MessageView } from '../views/message-view.js';
 import { NegociacoesView } from '../views/negotiation-view.js';
 import { Negociacao } from '../models/negotiation.js';
 import { Negotiations } from '../models/negotiations.js';
-export class NegotiationController {
+export class NegociacaoController {
     constructor() {
         this.negociacoes = new Negotiations();
         this.negociacoesView = new NegociacoesView('#negociacoesView');
