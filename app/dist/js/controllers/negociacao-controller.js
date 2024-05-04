@@ -10,8 +10,8 @@ import { logarTempoDeExecucao } from '../decorators/logar-tempo-execucao.js';
 import { DiasDaSemana } from '../enums/dias-da-semana.js';
 import { MessageView } from '../views/message-view.js';
 import { NegociacoesView } from '../views/negotiation-view.js';
-import { Negociacao } from './../models/negotiation.js';
-import { Negotiations } from './../models/negotiations.js';
+import { Negociacao } from '../models/negotiation.js';
+import { Negotiations } from '../models/negotiations.js';
 export class NegotiationController {
     constructor() {
         this.negociacoes = new Negotiations();
